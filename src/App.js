@@ -73,9 +73,12 @@ function App() {
   return (
     <div className="container">
       <Header />
-      <Button onAddTask={() => setShowAddTask(!showAddTask)} showAddTask={showAddTask} />
-      {showAddTask && <AddTask onAddTask={onAddTask}  />}
-      {tasks && tasks.length > 0 ? <Tasks tasks={tasks} onDeleteTask={onDeleteTask} onToggleTask={onToggleTask}/> : 'No task to display here'}
+      <div className="content">
+        <strong>This is a simple task tracker to add and list the tasks</strong>
+        <Button onAddTask={() => setShowAddTask(!showAddTask)} showAddTask={showAddTask} />
+        {showAddTask && <AddTask onAddTask={onAddTask}  />}
+        {tasks && tasks.length > 0 ? <Tasks tasks={tasks} onDeleteTask={onDeleteTask} onToggleTask={onToggleTask}/> : 'No task to display here'}
+      </div>
       <Footer />
     </div>
   );

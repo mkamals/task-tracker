@@ -29,6 +29,18 @@
       "day": "sdsadsds",
       "reminder": true,
       "id": 5
+    },
+    {
+      "text": "Changee UI",
+      "day": "Today",
+      "reminder": true,
+      "id": 6
+    },
+    {
+      "text": "change to repo link",
+      "day": "today",
+      "reminder": true,
+      "id": 7
     }
   ]
 }
