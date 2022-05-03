@@ -1,8 +1,102 @@
-.App {
+.container {
   text-align: center;
+  overflow: hidden;
 }
 
-.App-logo {
+.header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 10px 0px;
+}
+
+.header h3 {
+  margin: 0;
+}
+
+.footer {
+  background-color: rosybrown;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.button {
+  background-color: green;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 16px;
+  font-family: inherit;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute;
+  right: 0; */
+  margin: 10px;
+}
+
+.tasks {
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  padding: 10px;
+}
+
+.task {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.task.reminder {
+  border-left: 5px solid green;
+}
+
+.task p {
+  margin: 0;
+}
+
+.task h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task i {
+  color: red;
+  cursor: pointer;
+}
+
+
+ /* Below CSS are not used yet */
+
+ .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -11,17 +105,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {

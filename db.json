@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "text": "Kamal is not on leave",
+      "day": "Tomorrow",
+      "reminder": false,
+      "id": 1
+    },
+    {
+      "text": "Karthik is on leave",
+      "day": "tomorrow",
+      "reminder": true,
+      "id": 2
+    },
+    {
+      "text": "kanaga is on leave",
+      "day": "tomorrow",
+      "reminder": true,
+      "id": 3
+    },
+    {
+      "text": "aaaaaaa",
+      "day": "today",
+      "reminder": false,
+      "id": 4
+    },
+    {
+      "text": "asdsasdsad",
+      "day": "sdsadsds",
+      "reminder": true,
+      "id": 5
+    }
+  ]
+}
