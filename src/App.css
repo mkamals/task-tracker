@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   text-align: center;
   overflow-y: auto;
@@ -89,4 +95,41 @@
 .task i {
   color: red;
   cursor: pointer;
+}
+
+.form {
+  border: 2px solid green;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 20px 10px;
+}
+
+.form-data {
+  margin: 10px;
+}
+
+.form-data label {
+  display: flex;
+}
+
+.form-data input {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox label {
+  flex: 1;
+}
+
+.checkbox input {
+  flex: 2;
+  height: 20px;
 }

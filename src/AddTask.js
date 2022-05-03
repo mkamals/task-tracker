@@ -27,11 +27,11 @@ const AddTask = ({ onAddTask }) => {
                 <input type="text" placeholder="Enter task name" value={text} onChange={(e) => setText(e.target.value)} />
             </div>
             <div className="form-data">
-                <label>Day&Time:</label>
+                <label>Day & Time:</label>
                 <input type="text" placeholder="Enter day & time" value={day} onChange={(e) => setDay(e.target.value)} />
             </div>
-            <div className="form-data">
-                <label>Set Reminder</label>
+            <div className="form-data checkbox">
+                <label>Set Reminder:</label>
                 <input type="checkbox" value={reminder} onChange={(e) => setReminder(e.currentTarget.checked)}/>
             </div>
 
