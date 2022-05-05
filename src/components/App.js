@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./About";
 import AddTask from "./AddTask";
+import TaskDetail from "./TaskDetails";
 
 function App() {
   const [showAddTask, setShowAddTask] = useState(false);
@@ -107,6 +108,7 @@ function App() {
             }
           />
           <Route path="/about" element={<About />} />
+          <Route path="/task/:id" element={<TaskDetail />} />
         </Routes>
         <Footer />
       </div>
